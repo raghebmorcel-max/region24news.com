@@ -1,0 +1,1043 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.2">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Arial}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Arial; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;GCC &amp; MENA News&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ========== GLOBAL STYLES ========== */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bg: #f5f5f7;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bg-card: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--accent: #0f62fe;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--accent-soft: #e1ebff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--text-main: #111827;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--text-muted: #6b7280;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--border: #e5e7eb;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--radius: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--shadow: 0 10px 30px rgba(15, 23, 42, 0.08);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>* {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: radial-gradient(circle at top left, #eef2ff, #f9fafb 40%, #f3f4f6);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-main);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>a {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: inherit;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ========== LAYOUT ========== */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.page {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 1200px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>header {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.logo {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.logo-icon {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: conic-gradient(from 140deg, #0f62fe, #22c55e, #f97316, #0f62fe);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.1rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: var(--shadow);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.logo-text-title {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.4rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.logo-text-sub {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>nav {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>nav a {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.4rem 0.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid transparent;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>nav a.active,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>nav a:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-color: var(--accent-soft);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--accent-soft);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.lang-toggle {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: inline-flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.lang-btn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.3rem 0.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.85rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.lang-btn.active {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ========== TOOLBAR ========== */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.toolbar {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.search-box {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex: 1 1 220px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.4rem 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: var(--shadow);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.search-box input {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>outline: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.search-icon {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.filter-select {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.4rem 0.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-width: 150px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ========== MAIN GRID ========== */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.grid {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: 2fr 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: flex-start;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 900px) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.grid {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>grid-template-columns: 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ========== FEATURED ARTICLE ========== */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.featured {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--bg-card);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: var(--radius);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: var(--shadow);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 1.25rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.badge {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: inline-flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 0.35rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.2rem 0.55rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.7rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #ecfdf3;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #166534;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 0.04em;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.featured h1 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.4rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.3;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.meta {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.78rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.dot {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.featured p {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #374151;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.featured-footer {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.read-more-btn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.45rem 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.85rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: inline-flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 0.4rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: var(--shadow);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.read-more-btn span {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ========== LATEST ARTICLES LIST ========== */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-title {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 0.6rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.articles {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 1.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.article-card {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(255, 255, 255, 0.9);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.9rem 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid rgba(229, 231, 235, 0.9);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: 1fr auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 600px) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.article-card {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>grid-template-columns: 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.article-main {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 0.3rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.article-title {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.98rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.25;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.article-excerpt {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.85rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #4b5563;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.article-meta {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.article-category {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.15rem 0.55rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.7rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #eff6ff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #1d4ed8;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.article-actions {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: flex-end;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 0.4rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.7rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tag-pill {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.2rem 0.55rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px dashed var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ========== SIDEBAR ========== */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.sidebar {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--bg-card);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: var(--radius);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: var(--shadow);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card + .card {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 0.25rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.category-list {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 0.4rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.category-chip {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.3rem 0.7rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.78rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.category-chip.active {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-color: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--accent-soft);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.about-text {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.85rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #4b5563;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.5;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.subscribe-form {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 0.6rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.subscribe-form input {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.45rem 0.7rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>outline: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.subscribe-form button {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.45rem 0.7rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #111827;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #f9fafb;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.85rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>footer {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding-top: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-top: 1px solid #e5e7eb;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="page"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- HEADER --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="logo"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="logo-icon"&gt;N&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="logo-text-title" id="logoTitle"&gt;GCC &amp;amp; MENA News&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="logo-text-sub" id="logoSub"&gt;Economy, Tech, Business &amp;amp; Culture&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#" id="navHome" class="active"&gt;Home&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#gcc" id="navGcc"&gt;GCC&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#mena" id="navMena"&gt;MENA&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#about" id="navAbout"&gt;About&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#subscribe" id="navSubscribe"&gt;Subscribe&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="lang-toggle"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button type="button" class="lang-btn active" data-lang="en"&gt;EN&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button type="button" class="lang-btn" data-lang="ar"&gt;عربي&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- TOOLBAR --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="toolbar"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="search-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="search-icon"&gt;🔍&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input id="searchInput" type="text" placeholder="Search news by title or keyword…" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;select id="sortSelect" class="filter-select"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;option value="newest"&gt;Sort: Newest first&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;option value="oldest"&gt;Sort: Oldest first&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;option value="az"&gt;Sort: Title A–Z&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;select id="regionSelect" class="filter-select"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;option value="all"&gt;Region: All&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;option value="GCC"&gt;GCC only&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;option value="MENA"&gt;MENA only&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- MAIN GRID --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;main class="grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- LEFT: FEATURED + LATEST --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="featured" id="featuredArticle"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;!-- Filled by JavaScript --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="section-title" id="latestTitle" style="margin-top:1.3rem;"&gt;Latest articles&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="articles" id="articlesList"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;!-- Filled by JavaScript --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- RIGHT: SIDEBAR --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;aside class="sidebar"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3 class="section-title" id="categoriesTitle"&gt;Topics&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="category-list" id="categoryList"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Filled by JavaScript --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="card" id="about"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3 class="section-title" id="aboutTitle"&gt;About this website&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="about-text" id="aboutText"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>A bilingual news hub covering GCC and MENA stories in economy, tech, business, hospitality, fashion, food, healthcare, sports, and music.</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="card" id="subscribe"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3 class="section-title" id="subscribeTitle"&gt;Stay up to date&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="about-text" id="subscribeText"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Add your newsletter, Telegram, or WhatsApp broadcast link here. This form is just a visual template.</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;form class="subscribe-form" onsubmit="event.preventDefault(); alert('Demo only. Connect this form to your email or WhatsApp tool.');"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="email" id="subscribeInput" placeholder="Your email address" required /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button type="submit" id="subscribeButton"&gt;Subscribe&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/aside&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>© &lt;span id="year"&gt;&lt;/span&gt; &lt;span id="footerNote"&gt;GCC &amp;amp; MENA News. All rights reserved.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- ========== NEWS LOGIC ========== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/*</p>
+<p class="p1"><span class="Apple-converted-space">      </span>👉 HOW YOUR DATA IS STRUCTURED</p>
+<p class="p1"><span class="Apple-converted-space">      </span>---------------------------------</p>
+<p class="p1"><span class="Apple-converted-space">      </span>- Each item in newsArticles is one article.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>- Fields:</p>
+<p class="p1"><span class="Apple-converted-space">        </span>- region: "GCC" or "MENA"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>- category: Economy, Tech, Business, Hospitality, Fashion, Food, Healthcare, Sports, Music</p>
+<p class="p1"><span class="Apple-converted-space">        </span>- *_en / *_ar for bilingual content</p>
+<p class="p1"><span class="Apple-converted-space">    </span>*/</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const newsArticles = [</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{</p>
+<p class="p1"><span class="Apple-converted-space">        </span>id: 1,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>region: "GCC",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>category: "Economy",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>date: "2025-11-22",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>featured: true,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title_en: "GCC ministers discuss unified economic vision for 2040",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title_ar: "وزراء الخليج يناقشون رؤية اقتصادية موحدة لعام 2040",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>author_en: "Economy Desk",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>author_ar: "قسم الاقتصاد",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>excerpt_en:</p>
+<p class="p1"><span class="Apple-converted-space">          </span>"Finance and economy ministers from GCC countries met to explore deeper integration, investment flows, and non-oil growth.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>excerpt_ar:</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">          </span>"اجتمع وزراء المالية والاقتصاد في دول مجلس التعاون لبحث فرص التكامل الأعمق وزيادة الاستثمارات ودعم النمو غير النفطي.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>content_en: "",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>content_ar: ""</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{</p>
+<p class="p1"><span class="Apple-converted-space">        </span>id: 2,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>region: "MENA",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>category: "Tech",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>date: "2025-11-20",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>featured: false,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title_en: "AI startups across MENA attract record funding",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title_ar: "شركات الذكاء الاصطناعي الناشئة في المنطقة تحقّق تمويلاً قياسياً",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>author_en: "Tech Reporter",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>author_ar: "محرر التكنولوجيا",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>excerpt_en:</p>
+<p class="p1"><span class="Apple-converted-space">          </span>"A new wave of AI and cloud-native startups in MENA is drawing interest from global venture capital firms.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>excerpt_ar:</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">          </span>"تجذب موجة جديدة من الشركات الناشئة في مجالات الذكاء الاصطناعي والحوسبة السحابية اهتمام صناديق رأس المال الجريء العالمية.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>content_en: "",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>content_ar: ""</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{</p>
+<p class="p1"><span class="Apple-converted-space">        </span>id: 3,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>region: "GCC",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>category: "Business",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>date: "2025-11-19",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>featured: false,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title_en: "Family businesses in the Gulf accelerate IPO plans",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title_ar: "الشركات العائلية في الخليج تسرّع خطط الإدراج في البورصة",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>author_en: "Business Desk",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>author_ar: "قسم الأعمال",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>excerpt_en:</p>
+<p class="p1"><span class="Apple-converted-space">          </span>"Several large family-owned groups are preparing to list on regional stock exchanges as regulations evolve.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>excerpt_ar:</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">          </span>"تستعد عدة مجموعات عائلية كبرى للإدراج في البورصات الإقليمية بالتزامن مع تطور الأطر التنظيمية للأسواق المالية.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>content_en: "",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>content_ar: ""</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{</p>
+<p class="p1"><span class="Apple-converted-space">        </span>id: 4,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>region: "MENA",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>category: "Hospitality",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>date: "2025-11-18",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>featured: false,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title_en: "Regional tourism rebounds as new hospitality projects launch",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title_ar: "تعافي السياحة الإقليمية مع إطلاق مشاريع ضيافة جديدة",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>author_en: "Hospitality &amp; Travel",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>author_ar: "السياحة والضيافة",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>excerpt_en:</p>
+<p class="p1"><span class="Apple-converted-space">          </span>"New resorts, boutique hotels, and cultural experiences are redefining the region’s tourism offering.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>excerpt_ar:</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">          </span>"تسهم المنتجعات الجديدة والفنادق البوتيك والتجارب الثقافية في إعادة رسم مشهد السياحة في المنطقة.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>content_en: "",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>content_ar: ""</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{</p>
+<p class="p1"><span class="Apple-converted-space">        </span>id: 5,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>region: "GCC",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>category: "Fashion",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>date: "2025-11-17",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>featured: false,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title_en: "Gulf designers spotlight sustainable fashion on the global stage",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title_ar: "مصممو الخليج يسلّطون الضوء على الأزياء المستدامة عالمياً",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>author_en: "Culture &amp; Style",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>author_ar: "الثقافة والأناقة",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>excerpt_en:</p>
+<p class="p1"><span class="Apple-converted-space">          </span>"Designers from GCC capitals are integrating heritage with sustainability in new collections.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>excerpt_ar:</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">          </span>"يمزج مصممو العواصم الخليجية بين الإرث الثقافي والاستدامة في مجموعاتهم الجديدة.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>content_en: "",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>content_ar: ""</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{</p>
+<p class="p1"><span class="Apple-converted-space">        </span>id: 6,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>region: "MENA",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>category: "Food",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>date: "2025-11-16",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>featured: false,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title_en: "Cloud kitchens reshape food delivery in major MENA cities",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title_ar: "المطابخ السحابية تعيد تشكيل مشهد توصيل الطعام في مدن المنطقة",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>author_en: "Food &amp; Lifestyle",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>author_ar: "الغذاء ونمط الحياة",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>excerpt_en:</p>
+<p class="p1"><span class="Apple-converted-space">          </span>"Operators are investing in data-driven kitchens to meet rising demand for delivery-first brands.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>excerpt_ar:</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">          </span>"يستثمر المشغّلون في مطابخ تعتمد على البيانات لتلبية الطلب المتزايد على العلامات التجارية المعتمدة على التوصيل.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>content_en: "",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>content_ar: ""</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{</p>
+<p class="p1"><span class="Apple-converted-space">        </span>id: 7,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>region: "GCC",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>category: "Healthcare",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>date: "2025-11-15",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>featured: false,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title_en: "GCC healthcare providers expand digital health platforms",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title_ar: "مزودو الرعاية الصحية في الخليج يوسّعون منصات الصحة الرقمية",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>author_en: "Health Desk",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>author_ar: "قسم الصحة",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>excerpt_en:</p>
+<p class="p1"><span class="Apple-converted-space">          </span>"Telemedicine, remote monitoring, and AI diagnostics are becoming core to patient care strategies.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>excerpt_ar:</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">          </span>"أصبحت خدمات التطبيب عن بُعد والمراقبة المنزلية والتشخيص بالذكاء الاصطناعي جزءاً أساسياً من استراتيجيات رعاية المرضى.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>content_en: "",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>content_ar: ""</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{</p>
+<p class="p1"><span class="Apple-converted-space">        </span>id: 8,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>region: "MENA",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>category: "Sports",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>date: "2025-11-14",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>featured: false,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title_en: "Regional leagues invest in sports tech and fan engagement",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title_ar: "الدوريات الإقليمية تستثمر في تكنولوجيا الرياضة وتجربة الجماهير",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>author_en: "Sports Desk",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>author_ar: "القسم الرياضي",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>excerpt_en:</p>
+<p class="p1"><span class="Apple-converted-space">          </span>"Clubs are adopting data analytics, apps, and immersive experiences to grow their fan base.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>excerpt_ar:</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">          </span>"تتبنى الأندية تحليلات البيانات والتطبيقات والتجارب التفاعلية لتعزيز قاعدة الجماهير.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>content_en: "",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>content_ar: ""</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{</p>
+<p class="p1"><span class="Apple-converted-space">        </span>id: 9,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>region: "GCC",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>category: "Music",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>date: "2025-11-13",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>featured: false,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title_en: "Music festivals boost creative industries across the Gulf",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title_ar: "مهرجانات الموسيقى تدعم الصناعات الإبداعية في الخليج",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>author_en: "Arts &amp; Music",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>author_ar: "الفنون والموسيقى",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>excerpt_en:</p>
+<p class="p1"><span class="Apple-converted-space">          </span>"Live events and regional collaborations are opening new doors for emerging artists.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>excerpt_ar:</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">          </span>"تفتح الفعاليات الحيّة والتعاونات الإقليمية آفاقاً جديدة أمام المواهب الموسيقية الصاعدة.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>content_en: "",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>content_ar: ""</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const categoryLabels = {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Economy: { en: "Economy", ar: "الاقتصاد" },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Tech: { en: "Tech", ar: "التقنية" },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Business: { en: "Business", ar: "الأعمال" },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Hospitality: { en: "Hospitality", ar: "الضيافة" },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Fashion: { en: "Fashion", ar: "الموضة" },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Food: { en: "Food", ar: "الغذاء" },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Healthcare: { en: "Healthcare", ar: "الصحة" },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Sports: { en: "Sports", ar: "الرياضة" },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Music: { en: "Music", ar: "الموسيقى" }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const regionLabels = {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>GCC: { en: "GCC", ar: "الخليج" },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>MENA: { en: "MENA", ar: "الشرق الأوسط وشمال أفريقيا" }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const uiText = {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>en: {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>siteTitle: "GCC &amp; MENA News",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>siteTagline: "Economy, Tech, Business &amp; Culture",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>navHome: "Home",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>navGcc: "GCC",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>navMena: "MENA",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>navAbout: "About",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>navSubscribe: "Subscribe",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>searchPlaceholder: "Search news by title or keyword…",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>sortNewest: "Sort: Newest first",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>sortOldest: "Sort: Oldest first",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>sortAZ: "Sort: Title A–Z",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>regionAll: "Region: All",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>regionGCC: "GCC only",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>regionMENA: "MENA only",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>latestSection: "Latest articles",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>categoriesTitle: "Topics",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>aboutTitle: "About this website",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>aboutText:</p>
+<p class="p1"><span class="Apple-converted-space">          </span>"A bilingual news hub covering GCC and MENA stories in economy, tech, business, hospitality, fashion, food, healthcare, sports, and music.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>subscribeTitle: "Stay up to date",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>subscribeText:</p>
+<p class="p1"><span class="Apple-converted-space">          </span>"Add your newsletter, Telegram, or WhatsApp broadcast link here. This form is just a visual template.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>subscribeInputPlaceholder: "Your email address",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>subscribeButton: "Subscribe",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>footerNote: "GCC &amp; MENA News. All rights reserved.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>featuredBadge: "Featured",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>byLabel: "By",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>tipText: "Tip: later, link this button to a full article page.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>noArticles: "No articles match your search yet.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>noArticlesFeatured: "No articles available yet. Add some in the JavaScript section.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>tagFeatured: "⭐ Featured",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>tagStory: "Story",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>fullArticle: "Full article available",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>shortBrief: "Short brief",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>alertFullArticle: "In a real site, this would open the full article page."</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>ar: {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>siteTitle: "أخبار الخليج والشرق الأوسط وشمال أفريقيا",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>siteTagline: "اقتصاد، تقنية، أعمال، وضيافة وثقافة",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>navHome: "الرئيسية",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>navGcc: "الخليج",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>navMena: "المنطقة",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>navAbout: "من نحن",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>navSubscribe: "اشترك",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>searchPlaceholder: "ابحث في الأخبار بالعنوان أو الكلمات المفتاحية…",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>sortNewest: "ترتيب: الأحدث أولاً",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>sortOldest: "ترتيب: الأقدم أولاً",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>sortAZ: "ترتيب: من الألف إلى الياء",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>regionAll: "المنطقة: الكل",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>regionGCC: "الخليج فقط",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>regionMENA: "الشرق الأوسط وشمال أفريقيا فقط",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>latestSection: "آخر الأخبار",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>categoriesTitle: "الموضوعات",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>aboutTitle: "عن الموقع",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>aboutText:</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">          </span>"منصّة أخبار ثنائية اللغة تغطي أخبار الخليج والشرق الأوسط وشمال أفريقيا في مجالات الاقتصاد والتقنية والأعمال والضيافة والموضة والغذاء والصحة والرياضة والموسيقى.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>subscribeTitle: "ابقَ على اطلاع",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>subscribeText:</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">          </span>"أضف هنا رابط النشرة البريدية أو قناة التلغرام أو قائمة البث على واتساب. هذا النموذج للعرض فقط.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>subscribeInputPlaceholder: "بريدك الإلكتروني",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>subscribeButton: "اشترك",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>footerNote: "أخبار الخليج والشرق الأوسط وشمال أفريقيا. جميع الحقوق محفوظة.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>featuredBadge: "أبرز خبر",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>byLabel: "بقلم",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>tipText: "ملاحظة: يمكنك لاحقاً ربط هذا الزر بصفحة المقال الكاملة.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>noArticles: "لا توجد مقالات تطابق بحثك حالياً.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>noArticlesFeatured: "لا توجد مقالات بعد. أضف بعض الأخبار في قسم JavaScript.",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>tagFeatured: "⭐ خبر مميز",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>tagStory: "خبر",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>fullArticle: "مقال كامل متوفر",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>shortBrief: "ملخص قصير",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>alertFullArticle: "في الموقع الحقيقي سيتم فتح صفحة المقال الكامل."</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const featuredContainer = document.getElementById("featuredArticle");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const articlesList = document.getElementById("articlesList");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const categoryList = document.getElementById("categoryList");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const searchInput = document.getElementById("searchInput");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const sortSelect = document.getElementById("sortSelect");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const regionSelect = document.getElementById("regionSelect");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const yearSpan = document.getElementById("year");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const logoTitle = document.getElementById("logoTitle");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const logoSub = document.getElementById("logoSub");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const navHome = document.getElementById("navHome");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const navGcc = document.getElementById("navGcc");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const navMena = document.getElementById("navMena");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const navAbout = document.getElementById("navAbout");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const navSubscribe = document.getElementById("navSubscribe");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const latestTitle = document.getElementById("latestTitle");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const categoriesTitle = document.getElementById("categoriesTitle");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const aboutTitle = document.getElementById("aboutTitle");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const aboutText = document.getElementById("aboutText");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const subscribeTitle = document.getElementById("subscribeTitle");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const subscribeText = document.getElementById("subscribeText");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const subscribeInput = document.getElementById("subscribeInput");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const subscribeButton = document.getElementById("subscribeButton");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const footerNote = document.getElementById("footerNote");</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>yearSpan.textContent = new Date().getFullYear();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>let activeCategory = "All";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let currentLang = "en";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function formatDate(isoDate, lang) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const d = new Date(isoDate);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (Number.isNaN(d.getTime())) return isoDate;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>return d.toLocaleDateString(lang === "ar" ? "ar" : undefined, {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>year: "numeric",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>month: "short",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>day: "numeric"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function renderFeatured(articles) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const t = uiText[currentLang];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (!articles.length) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>featuredContainer.innerHTML = `&lt;p&gt;${t.noArticlesFeatured}&lt;/p&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const featured =</p>
+<p class="p1"><span class="Apple-converted-space">        </span>articles.find((a) =&gt; a.featured) ||</p>
+<p class="p1"><span class="Apple-converted-space">        </span>[...articles].sort((a, b) =&gt; new Date(b.date) - new Date(a.date))[0];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const title = currentLang === "en" ? featured.title_en : featured.title_ar;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const author = currentLang === "en" ? featured.author_en : featured.author_ar;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const excerpt = currentLang === "en" ? featured.excerpt_en : featured.excerpt_ar;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const regionLabel = regionLabels[featured.region][currentLang];</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const categoryLabel = categoryLabels[featured.category][currentLang];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>featuredContainer.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="badge"&gt;${t.featuredBadge}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;${title}&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="meta"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span&gt;${formatDate(featured.date, currentLang)}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="dot"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span&gt;${regionLabel}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="dot"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span&gt;${categoryLabel}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="dot"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span&gt;${t.byLabel} ${author}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;${excerpt}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="featured-footer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="read-more-btn" onclick="alert(uiText[currentLang].alertFullArticle)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;${currentLang === "en" ? "Read full story" : "قراءة التفاصيل"}&lt;/span&gt; &lt;span&gt;→&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span style="font-size:0.8rem; color:#6b7280;"&gt;${t.tipText}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function renderArticles() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const t = uiText[currentLang];</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const searchTerm = searchInput.value.toLowerCase().trim();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>let filtered = newsArticles.slice();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (activeCategory !== "All") {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>filtered = filtered.filter((a) =&gt; a.category === activeCategory);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const regionValue = regionSelect.value;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (regionValue !== "all") {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>filtered = filtered.filter((a) =&gt; a.region === regionValue);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (searchTerm) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>filtered = filtered.filter((a) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const title = (currentLang === "en" ? a.title_en : a.title_ar).toLowerCase();</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const excerpt = (currentLang === "en" ? a.excerpt_en : a.excerpt_ar).toLowerCase();</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const content = (currentLang === "en" ? a.content_en : a.content_ar).toLowerCase();</p>
+<p class="p1"><span class="Apple-converted-space">          </span>return (</p>
+<p class="p1"><span class="Apple-converted-space">            </span>title.includes(searchTerm) ||</p>
+<p class="p1"><span class="Apple-converted-space">            </span>excerpt.includes(searchTerm) ||</p>
+<p class="p1"><span class="Apple-converted-space">            </span>content.includes(searchTerm)</p>
+<p class="p1"><span class="Apple-converted-space">          </span>);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const sortValue = sortSelect.value;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>filtered.sort((a, b) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (sortValue === "newest") return new Date(b.date) - new Date(a.date);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (sortValue === "oldest") return new Date(a.date) - new Date(b.date);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (sortValue === "az") {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const ta = currentLang === "en" ? a.title_en : a.title_ar;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const tb = currentLang === "en" ? b.title_en : b.title_ar;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>return ta.localeCompare(tb, currentLang === "ar" ? "ar" : undefined);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>articlesList.innerHTML = "";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (!filtered.length) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>articlesList.innerHTML = `&lt;p style="font-size:0.85rem; color:#6b7280;"&gt;${t.noArticles}&lt;/p&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>filtered.forEach((article) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const title = currentLang === "en" ? article.title_en : article.title_ar;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const author = currentLang === "en" ? article.author_en : article.author_ar;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const excerpt = currentLang === "en" ? article.excerpt_en : article.excerpt_ar;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const categoryLabel = categoryLabels[article.category][currentLang];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const regionLabel = regionLabels[article.region][currentLang];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const div = document.createElement("div");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>div.className = "article-card";</p>
+<p class="p1"><span class="Apple-converted-space">        </span>div.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="article-main"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="article-title"&gt;${title}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="article-excerpt"&gt;${excerpt}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="article-meta"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span&gt;${formatDate(article.date, currentLang)}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="dot"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span&gt;${regionLabel}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="dot"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span&gt;${t.byLabel} ${author}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="article-category"&gt;${categoryLabel}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="article-actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="tag-pill"&gt;${article.featured ? t.tagFeatured : t.tagStory}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;${(currentLang === "en" ? article.content_en : article.content_ar) ? t.fullArticle : t.shortBrief}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>articlesList.appendChild(div);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function renderCategories() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const t = uiText[currentLang];</p>
+<p class="p1"><span class="Apple-converted-space">      </span>categoriesTitle.textContent = t.categoriesTitle;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const categories = Array.from(new Set(newsArticles.map((a) =&gt; a.category))).sort();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const allCats = ["All", ...categories];</p>
+<p class="p1"><span class="Apple-converted-space">      </span>categoryList.innerHTML = "";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>allCats.forEach((catKey) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const btn = document.createElement("button");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>btn.type = "button";</p>
+<p class="p1"><span class="Apple-converted-space">        </span>btn.className = "category-chip" + (catKey === activeCategory ? " active" : "");</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (catKey === "All") {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>btn.textContent = currentLang === "en" ? "All topics" : "جميع الموضوعات";</p>
+<p class="p1"><span class="Apple-converted-space">        </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const label = categoryLabels[catKey][currentLang];</p>
+<p class="p1"><span class="Apple-converted-space">          </span>btn.textContent = label;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>btn.addEventListener("click", () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>activeCategory = catKey;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>document</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.querySelectorAll(".category-chip")</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.forEach((el) =&gt; el.classList.remove("active"));</p>
+<p class="p1"><span class="Apple-converted-space">          </span>btn.classList.add("active");</p>
+<p class="p1"><span class="Apple-converted-space">          </span>renderArticles();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>categoryList.appendChild(btn);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function applyLanguage() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const t = uiText[currentLang];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.documentElement.lang = currentLang === "en" ? "en" : "ar";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.body.dir = currentLang === "ar" ? "rtl" : "ltr";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>logoTitle.textContent = t.siteTitle;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>logoSub.textContent = t.siteTagline;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>navHome.textContent = t.navHome;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>navGcc.textContent = t.navGcc;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>navMena.textContent = t.navMena;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>navAbout.textContent = t.navAbout;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>navSubscribe.textContent = t.navSubscribe;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>searchInput.placeholder = t.searchPlaceholder;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>sortSelect.options[0].textContent = t.sortNewest;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>sortSelect.options[1].textContent = t.sortOldest;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>sortSelect.options[2].textContent = t.sortAZ;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>regionSelect.options[0].textContent = t.regionAll;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>regionSelect.options[1].textContent = t.regionGCC;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>regionSelect.options[2].textContent = t.regionMENA;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>latestTitle.textContent = t.latestSection;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>aboutTitle.textContent = t.aboutTitle;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>aboutText.textContent = t.aboutText;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>subscribeTitle.textContent = t.subscribeTitle;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>subscribeText.textContent = t.subscribeText;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>subscribeInput.placeholder = t.subscribeInputPlaceholder;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>subscribeButton.textContent = t.subscribeButton;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>footerNote.textContent = t.footerNote;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>renderFeatured(newsArticles);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>renderCategories();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>renderArticles();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Initial setup</p>
+<p class="p1"><span class="Apple-converted-space">    </span>applyLanguage();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Events</p>
+<p class="p1"><span class="Apple-converted-space">    </span>searchInput.addEventListener("input", () =&gt; renderArticles());</p>
+<p class="p1"><span class="Apple-converted-space">    </span>sortSelect.addEventListener("change", () =&gt; renderArticles());</p>
+<p class="p1"><span class="Apple-converted-space">    </span>regionSelect.addEventListener("change", () =&gt; renderArticles());</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll(".lang-btn").forEach((btn) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>btn.addEventListener("click", () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const lang = btn.getAttribute("data-lang");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (lang === currentLang) return;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>currentLang = lang;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.querySelectorAll(".lang-btn").forEach((b) =&gt; b.classList.remove("active"));</p>
+<p class="p1"><span class="Apple-converted-space">        </span>btn.classList.add("active");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>applyLanguage();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
